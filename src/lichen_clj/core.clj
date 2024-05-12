@@ -14,9 +14,14 @@
   (make-http-req licenses))
 
 (defn get-license [l]
-  [{}])
+  (make-http-req (str licenses "/" (get l "key"))))
 
 (defn -main
   "A simple OSS License Generator"
   [& args]
-  (println (get (first (json/read-str (get-available-licenses))) "url")))
+  (println
+  (->>
+   (get-available-licenses)
+   (json/read-str)
+   (first)
+   (get-license))))
