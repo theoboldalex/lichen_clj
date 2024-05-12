@@ -1,3 +1,5 @@
-# Introduction to lichen_clj
+# Introduction to Lichen
 
-TODO: write [great documentation](http://jacobian.org/writing/what-to-write/)
+Lichen is a very small, very simple utiliy for generating open source licenses right from your terminal.
+
+Written in Clojure BTW
