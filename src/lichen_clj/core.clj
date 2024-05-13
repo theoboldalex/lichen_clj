@@ -1,7 +1,7 @@
 (ns lichen-clj.core
   (:require [clojure.java.io :as io]
             [clojure.data.json :as json]
- [clojure.string :as string])
+            [clojure.string :as string])
   (:gen-class))
 
 (defn make-http-req [url]
@@ -21,13 +21,13 @@
 
 (defn list-options []
   (->>
-   (get-available-licenses)
-   (map #(get % "name"))
-   (map-indexed #(str (str (inc %1) ". ") %2))
-   (string/join "\n")))
+    (get-available-licenses)
+  (map #(get % "name"))
+  (map-indexed #(str (str (inc %1) ". ") %2))
+  (string/join "\n")))
 
 (defn -main
   "A simple OSS License Generator"
-  [& args] 
+  [& args]
   (println prompt)
- (println (list-options)))
+  (println (list-options)))
