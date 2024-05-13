@@ -109,3 +109,23 @@ clj꞉lichen-clj.core꞉> 
 ; Syntax error compiling at (src/lichen_clj/core.clj:26:1).
 ; Unable to resolve symbol: list-options in this context
 clj꞉lichen-clj.core꞉> 
+; Syntax error compiling at (src/lichen_clj/core.clj:19:15).
+; Unable to resolve symbol: get-available-licenses in this context
+clj꞉lichen-clj.core꞉> 
+()
+clj꞉lichen-clj.core꞉> 
+; Syntax error compiling at (src/lichen_clj/core.clj:1:8693).
+; Unable to resolve symbol: get-available-licenses in this context
+clj꞉lichen-clj.core꞉> 
+[]
+clj꞉lichen-clj.core꞉> 
+; Syntax error compiling at (src/lichen_clj/core.clj:1:8693).
+; Unable to resolve symbol: licenses_url in this context
+clj꞉lichen-clj.core꞉> 
+; Syntax error compiling at (src/lichen_clj/core.clj:17:18).
+; Unable to resolve symbol: make-http-req in this context
+clj꞉lichen-clj.core꞉> 
+; Syntax error compiling at (src/lichen_clj/core.clj:1:8693).
+; Unable to resolve symbol: get-available-licenses in this context
+clj꞉lichen-clj.core꞉> 
+; nREPL Connection was closed
