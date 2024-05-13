@@ -1,0 +1,3 @@
+Welcome to Lichen. The OSS License Generator.
+
+Please choose a License
