@@ -25,22 +25,22 @@
   (->>
    licenses
    (map #(get % "name"))
-  (map-indexed #(str (str (inc %1) ". ") %2))
-  (string/join "\n")))
+   (map-indexed #(str (str (inc %1) ". ") %2))
+   (string/join "\n")))
 
 (defn get-choice []
   (print "\nSelect a license number: ")
   (flush)
   (let [choice (try
-               (Integer/parseInt (read-line))
-               (catch Exception e nil))
-      valid-choice (and choice (>= choice 1) (<= choice (count licenses)))]
-  (if valid-choice
-    (let [l (licenses (dec choice))]
-      (println (str (get l "name") "! Nice!"))
+                 (Integer/parseInt (read-line))
+                 (catch Exception e nil))
+        valid-choice (and choice (>= choice 1) (<= choice (count licenses)))]
+    (if valid-choice
+      (let [l (licenses (dec choice))]
+        (println (str (get l "name") "! Nice!"))
         ((get-license l) "body"))
-   (do (println "Invalid choice. Please choose again.")
-       (recur)))))
+      (do (println "Invalid choice. Please choose again.")
+          (recur)))))
 
 (defn write-license [body]
   (spit "LICENSE" body))
@@ -50,5 +50,5 @@
   [& args]
   (println prompt)
   (println (list-options))
- (let [choice (get-choice)]
-   (write-license choice)))
+  (let [choice (get-choice)]
+    (write-license choice)))

@@ -129,3 +129,36 @@ clj꞉lichen-clj.core꞉> 
 ; Unable to resolve symbol: get-available-licenses in this context
 clj꞉lichen-clj.core꞉> 
 ; nREPL Connection was closed
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in Terminal: (cd /Users/alextheobold/Dev/lichen_clj; lein update-in :dependencies conj '[nrepl,"1.1.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.47.1"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless)
+; Using host:port 127.0.0.1:63050 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉lichen-clj.core꞉> 
+; Jack-in done.
+clj꞉lichen-clj.core꞉> 
+#'lichen-clj.core/greet
+clj꞉lichen-clj.core꞉> 
+#function[lichen-clj.core/greet]
+clj꞉lichen-clj.core꞉> 
+; Execution error (ArityException) at lichen-clj.core/eval10366 (form-init2243807952756350336.clj:24).
+; Wrong number of args (0) passed to: lichen-clj.core/greet
+clj꞉lichen-clj.core꞉> 
+"Hello"
+clj꞉lichen-clj.core꞉> 
+#'lichen-clj.core/greet
+clj꞉lichen-clj.core꞉> 
+"HelloAlex"
+clj꞉lichen-clj.core꞉> 
+#'lichen-clj.core/greet
+clj꞉lichen-clj.core꞉> 
+"Hello Alex!"
+clj꞉lichen-clj.core꞉> 
+; nREPL Connection was closed
